@@ -1,0 +1,6 @@
+## Interface: 40300
+## Title: AI God
+## Author: dzharvis
+## Version: 0.1
+main.lua
+main.xml

@@ -1,0 +1,108 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\..\FrameXML\UI.xsd">
+    <Script File="main.lua"/>
+    <Frame name="AIFrame">
+        <Anchors>
+            <Anchor point="TOPLEFT">
+                <Offset>
+                    <AbsDimension x="5" y="-100"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+        <Size>
+            <AbsDimension x="500" y="500"/>
+        </Size>
+        <Frames>
+            <Frame name="StatusF">
+                <Size>
+                    <AbsDimension x="5" y="5"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" />
+                </Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture name="StatusT"/>
+                    </Layer>
+                </Layers>
+            </Frame>
+            <Frame name="BGF">
+                <Size>
+                    <AbsDimension x="5" y="5"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT">
+                        <Offset>
+                            <AbsDimension x="5" y="0"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture name="BGT"/>
+                    </Layer>
+                </Layers>
+            </Frame>
+            <Frame name="PlayerF">
+                <Size>
+                    <AbsDimension x="5" y="5"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT">
+                        <Offset>
+                            <AbsDimension x="10" y="0"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture name="PlayerT"/>
+                    </Layer>
+                </Layers>
+            </Frame>
+            <Frame name="PlayerPosXF">
+                <Size>
+                    <AbsDimension x="5" y="5"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT">
+                        <Offset>
+                            <AbsDimension x="5" y="-5"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture name="PlayerPosX"/>
+                    </Layer>
+                </Layers>
+            </Frame>
+             <Frame name="PlayerPosYF">
+                <Size>
+                    <AbsDimension x="5" y="5"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT">
+                        <Offset>
+                            <AbsDimension x="10" y="-5"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture name="PlayerPosY"/>
+                    </Layer>
+                </Layers>
+            </Frame>
+        </Frames>
+        <Scripts>
+            <OnLoad>
+                HelloWorld();
+            </OnLoad>
+            <OnUpdate>
+                UpdateSemaphors();
+            </OnUpdate>
+        </Scripts>
+    </Frame>
+</Ui>
