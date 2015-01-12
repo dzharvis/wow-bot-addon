@@ -95,6 +95,23 @@
                     </Layer>
                 </Layers>
             </Frame>
+            <Frame name="PlayerFF">
+                <Size>
+                    <AbsDimension x="5" y="5"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT">
+                        <Offset>
+                            <AbsDimension x="15" y="-5"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <Texture name="PlayerFT"/>
+                    </Layer>
+                </Layers>
+            </Frame>
         </Frames>
         <Scripts>
             <OnLoad>
